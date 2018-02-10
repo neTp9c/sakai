@@ -44,4 +44,46 @@ ${changeSettingInstructions}
         <locale></locale>
         <localeLangTag></localeLangTag>
     </emailTemplate>
+    <emailTemplate>
+        <subject>Уведомление об отправке теста: ${siteName} - ${assessmentTitle}</subject>
+        <message>Следующая попытка сдачи теста была зафиксирована:
+
+            Название сайта         : ${siteName}
+            Тест                   : ${assessmentTitle}
+
+            Студент                : ${userName} (${userDisplayID})
+            Идентификатор попытки  : ${assessmentGradingID}
+            Дата попытки           : ${submissionDate}
+            Номер подтверждения    : ${confirmationNumber}
+
+            Тест продлится до      : ${assessmentDueDate}
+            Идентификатор сайта    : ${siteID}
+
+            ---
+            Это уведомление было отправлено автоматически.
+        </message>
+        <messagehtml>&lt;pre&gt;
+            Следующая попытка сдачи теста была зафиксирована:
+
+            Название сайта         : ${siteName}
+            Тест                   : ${assessmentTitle}
+
+            Студент                : ${userName} (${userDisplayID})
+            Идентификатор попытки  : ${assessmentGradingID}
+            Дата попытки           : ${submissionDate}
+            Номер подтверждения    : ${confirmationNumber}
+
+            Тест продлится до      : ${assessmentDueDate}
+            Идентификатор сайта    : ${siteID}
+
+            ---
+            Это уведомление было отправлено автоматически.
+            &lt;/pre&gt;
+        </messagehtml>
+        <version>1</version>
+        <owner>admin</owner>
+        <key>sam.assessmentSubmitted</key>
+        <locale>ru</locale>
+        <localeLangTag>ru</localeLangTag>
+    </emailTemplate>
 </emailTemplates>
