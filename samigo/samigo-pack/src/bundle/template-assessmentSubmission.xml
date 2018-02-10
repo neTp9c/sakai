@@ -44,7 +44,7 @@
     </emailTemplate>
     <emailTemplate>
         <subject>Notification for assessment submission: ${siteName} - ${assessmentTitle}</subject>
-        <message>The following assessment submission was recorded by ${localSakaiName}:
+        <message>RU - The following assessment submission was recorded by ${localSakaiName}:
 
             Site Title          : ${siteName}
             Assessment          : ${assessmentTitle}
@@ -62,7 +62,7 @@
             ${changeSettingInstructions}
         </message>
         <messagehtml>&lt;pre&gt;
-            The following assessment submission was recorded by ${localSakaiName}:
+            RU - The following assessment submission was recorded by ${localSakaiName}:
 
             Site Title          : ${siteName}
             Assessment          : ${assessmentTitle}
